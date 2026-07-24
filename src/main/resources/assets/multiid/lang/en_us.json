@@ -1,0 +1,8 @@
+{
+  "multiid.added": "Added: %s. Selected: %s",
+  "multiid.removed": "Removed: %s. Selected: %s",
+  "multiid.copied": "Copied IDs: %s",
+  "multiid.cleared": "ID list cleared",
+  "multiid.not_found": "No item found under the cursor",
+  "multiid.empty": "ID list is empty"
+}

@@ -1,0 +1,8 @@
+{
+  "multiid.added": "Добавлено: %s. В списке: %s",
+  "multiid.removed": "Удалено: %s. В списке: %s",
+  "multiid.copied": "Скопировано ID: %s",
+  "multiid.cleared": "Список ID очищен",
+  "multiid.not_found": "Под курсором не найден предмет",
+  "multiid.empty": "Список ID пуст"
+}
