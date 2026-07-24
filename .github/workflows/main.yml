@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Скачать проект
+        uses: actions/checkout@v4
+
+      - name: Установить Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Установить Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.2.1'
+
+      - name: Собрать мод
+        run: gradle build
+
+      - name: Сохранить готовый JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: multiid-neoforge-1.21.1
+          path: build/libs/*.jar
